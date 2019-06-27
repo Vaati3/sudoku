@@ -1,6 +1,6 @@
 SRC = if_error.c main.c modify_val.c print_sudo.c
 
-NAME = sudoku
+NAME = sudoku_solver
 
 all: $(NAME)
 
