@@ -5,7 +5,7 @@ NAME = sudoku_solver
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Wextra -Werror -W $(SRC) -o $(NAME) -I./include
+	gcc -Wall -Wextra -Werror -W $(SRC) -o $(NAME) -I./include -g3
 
 clean:
 

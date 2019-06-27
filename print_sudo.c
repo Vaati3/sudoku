@@ -1,27 +1,20 @@
 #include "sudoku.h"
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
 void	print_sudo(char **tab)
 {
 	int i;
 	int j;
 
 	i = 0;
-	while (i < 9)
-	{
+	while (i < 9) {
 		j = 0;
-		while (j < 9)
-		{
-			ft_putchar(tab[i][j]);
+		while (j < 9) {
+			write(1, &tab[i][j], 1);
 			if (j != 8)
-				ft_putchar(' ');
+				write(1, " ", 1);
 			j++;
 		}
-		ft_putchar('\n');
+		write(1, "\n", 1);
 		i++;
 	}
 }

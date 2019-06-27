@@ -13,11 +13,8 @@ int		nb_char(int argc, char **argv)
 
 	i = 1;
 	if (argc != 10)
-	{
 		return (error());
-	}
-	while (i < 10)
-	{
+	while (i < 10) {
 		j = 0;
 		while (argv[i][j])
 			j++;
@@ -34,11 +31,9 @@ int		modify_error(char **tab)
 	int j;
 
 	i = 0;
-	while (i < 9)
-	{
+	while (i < 9) {
 		j = 0;
-		while (j < 9)
-		{
+		while (j < 9) {
 			if (!(tab[i][j] >= '0' && tab[i][j] <= '9'))
 				return (error());
 			j++;
@@ -62,11 +57,9 @@ int		tab_error(char **tab, char **tabrev)
 	int j;
 
 	i = 0;
-	while (i < 9)
-	{
+	while (i < 9) {
 		j = 0;
-		while (j < 9)
-		{
+		while (j < 9) {
 			if (tab[i][j] != tabrev[i][j])
 				return (error());
 			j++;

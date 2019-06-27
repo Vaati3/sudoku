@@ -3,8 +3,7 @@ int		check_line_co(char k, char **tab, int i, int j)
 	int h;
 
 	h = 0;
-	while (h < 9)
-	{
+	while (h < 9) {
 		if (tab[i][h] == k || tab[h][j] == k)
 			return (0);
 		h++;
@@ -20,11 +19,9 @@ int		check_block(char k, char **tab, int i, int j)
 	i2 = i - (i % 3);
 	j2 = j - (j % 3);
 	i = i2;
-	while (i < i2 + 3)
-	{
+	while (i < i2 + 3) {
 		j = j2;
-		while (j < j2 + 3)
-		{
+		while (j < j2 + 3) {
 			if (tab[i][j] == k)
 				return (0);
 			j++;
@@ -47,10 +44,8 @@ int		modify_val(char **tab, int position)
 	if (tab[i][j] != '.')
 		return (modify_val(tab, position + 1));
 	k = '1';
-	while (k <= '9')
-	{
-		if (check_line_co(k, tab, i, j) == 1 && check_block(k, tab, i, j) == 1)
-		{
+	while (k <= '9') {
+		if (check_line_co(k, tab, i, j) == 1 && check_block(k, tab, i, j) == 1) {
 			tab[i][j] = k;
 			if (modify_val(tab, position + 1) == 1)
 				return (1);
@@ -74,11 +69,9 @@ int		modify_rev_val(char **tabrev, int position)
 	if (tabrev[i][j] != '.')
 		return (modify_rev_val(tabrev, position - 1));
 	k = '1';
-	while (k <= '9')
-	{
+	while (k <= '9') {
 		if (check_line_co(k, tabrev, i, j) == 1 &&
-				check_block(k, tabrev, i, j) == 1)
-		{
+				check_block(k, tabrev, i, j) == 1) {
 			tabrev[i][j] = k;
 			if (modify_rev_val(tabrev, position - 1) == 1)
 				return (1);

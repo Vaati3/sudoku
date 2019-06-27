@@ -16,7 +16,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-void	ft_putchar(char c);
 void	print_sudo(char **tab);
 int		modify_val(char **tab, int position);
 int		modify_rev_val(char **tabrev, int position);
