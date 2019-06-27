@@ -2,7 +2,7 @@
 
 Sudoku solver is a program in c that solve any valid sudoku grid.
 
-##Compilation
+## Compilation
 
 Compile the solver with the makefile
 
@@ -10,9 +10,13 @@ Compile the solver with the makefile
 make
 '''
 
-##Usage
+## Usage
 
 The grid need to have one solution and only one.
 
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg/1024px-Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png)
+
+for this grid the usage is 
+
+![alt text](https://github.com/Vaati3/sudoku/blob/master/usage.png)
