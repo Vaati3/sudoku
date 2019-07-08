@@ -6,9 +6,9 @@ Sudoku solver is a program in c that solve any valid sudoku grid.
 
 Compile the solver with the makefile
 
-'''bash
+```bash
 make
-'''
+```
 
 ## Usage
 
